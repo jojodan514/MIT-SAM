@@ -18,18 +18,9 @@ import random
 import numpy as np
 from pytorch_lightning import seed_everything
 
-# SEED=1234
-# random.seed(SEED)
-# np.random.seed(SEED)
-# torch.manual_seed(SEED)
-# # torch.cuda.manual_seed(SEED) # 适用于显卡训练
-# torch.cuda.manual_seed_all(SEED) # 适用于多显卡训练
-# cudnn.benchmark = False
-# cudnn.deterministic = True
-
 def seed_torch(seed=1029):
 	random.seed(seed)
-	os.environ['PYTHONHASHSEED'] = str(seed) # 为了禁止hash随机化，使得实验可复现
+	os.environ['PYTHONHASHSEED'] = str(seed) 
 	np.random.seed(seed)
 	torch.manual_seed(seed)
 	torch.cuda.manual_seed(seed)
