@@ -3,4 +3,4 @@ This code repository is dedicated to open-sourcing code related to MIT-SAM.
 
 The title of the paper is: ”MIT-SAM: Medical Image-Text SAM with Mutually Enhanced Heterogeneous Features Fusion for Medical Image Segmentation“
 
-![image](MIT-SAM/Figs/overall_7.png)
+![image](Figs/overall_7.png)
